@@ -1,0 +1,42 @@
+{
+  "Users": [
+    {
+      "id": "44",
+      "Book_title": "Alone on a Wide, Wide Sea",
+      "Book_author": "Michael Morpurgo",
+      "NumberOfBooks": "33"
+    },
+    {
+      "id": "11",
+      "Book_title": "Wings of fire",
+      "Book_author": "APJ Abdul kalam",
+      "NumberOfBooks": "5"
+    },
+    {
+      "id": "13",
+      "Book_title": "The Catcher in the Rye",
+      "Book_author": "J.D. Salinger",
+      "NumberOfBooks": "25"
+    },
+    {
+      "id": "22",
+      "Book_title": "Animal Farm",
+      "Book_author": "George Orwell",
+      "NumberOfBooks": "60"
+    },
+    {
+      "id": "01",
+      "Book_title": "Dracula",
+      "Book_author": "Bram Stoker",
+      "NumberOfBooks": "100"
+    }
+  ],
+  "posts": [
+    {
+      "id": 6,
+      "Book_title": "All Passion Spent",
+      "Book_author": "Vita Sackville-West",
+      "NumberOfBooks": "1"
+    }
+  ]
+}

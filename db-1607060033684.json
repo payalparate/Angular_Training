@@ -1,0 +1,36 @@
+{
+  "Users": [
+    {
+      "id": 3,
+      "Book_title": "Alone on a Wide, Wide Sea",
+      "Book_author": "Michael Morpurgo",
+      "NumberOfBooks": "20"
+    },
+    {
+      "id": 4,
+      "Book_title": "An Acceptable Time",
+      "Book_author": "Madeleine L'Engle",
+      "NumberOfBooks": "5"
+    },
+    {
+      "id": 5,
+      "Book_title": "Cabbages and Kings",
+      "Book_author": "O. Henry",
+      "NumberOfBooks": "10"
+    },
+    {
+      "id": "55",
+      "Book_title": "Two States",
+      "Book_author": "Chetan Bhagat",
+      "NumberOfBooks": "20"
+    }
+  ],
+  "posts": [
+    {
+      "id": 6,
+      "Book_title": "All Passion Spent",
+      "Book_author": "Vita Sackville-West",
+      "NumberOfBooks": "1"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<div class="container login-container">
+    <div class="row">
+        <div class="col-md-6 login-form-1">
+            <h3>Member Login</h3>
+            <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                <div class="form-group">
+
+                    <label for="email">Email</label>
+
+                    <input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email
+                        pattern="[a-z0-9._]+@[a-z]+\.[a-z]{3}$" />
+
+                    <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+
+                        <div *ngIf="email.errors.required">Email is required</div>
+
+                        <div *ngIf="email.errors.pattern">Email must be a valid email address and format is
+                            abc@gmail.com</div>
+
+                    </div>
+
+                </div>
+                <!-- 1st form grp -->
+
+                <div class="form-group">
+
+                    <label for="password">Password</label>
+
+                    <input type="password" class="form-control" name="password" [(ngModel)]="model.password"
+                        #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required
+                        minlength="6" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+
+                    <div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
+                        <div *ngIf="password.errors.required">Password is required</div>
+                        <div *ngIf="password.errors.pattern">Must contain at least one number and one uppercase and
+                            lowercase letter, and at least 8 or more characters</div>
+                    </div>
+
+                </div>
+                <!-- 2nd form grp -->
+                <div class="form-group">
+                <button class="btn btn-primary">Login</button>
+                </div>
+
+                <div class="form-group">
+                    <a href="#" class="ForgetPwd">Forget Password?</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-6 login-form-2">
+            <h3>Librarian Login</h3>
+            <form name="form1" (ngSubmit)="f1.form.valid && onSubmit2()" #f1="ngForm" novalidate>
+                <div class="form-group">
+
+                    <label for="email1">Email</label>
+                    <input type="text" class="form-control" name="email1" [(ngModel)]="model.email1" #email1="ngModel"
+                        [ngClass]="{ 'is-invalid': f1.submitted && email1.invalid }" required email
+                        pattern="[a-z0-9._]+@[a-z]+\.[a-z]{3}$" />
+
+                    <div *ngIf="f1.submitted && email1.invalid" class="invalid-feedback">
+                       <div *ngIf="email1.errors.required">Email is required</div>
+                        <div *ngIf="email1.errors.pattern">Email must be a valid email address and format is
+                            abc@gmail.com</div>
+                    </div>
+                </div>
+                <!-- 1st form grp -->
+
+                <div class="form-group">
+
+                    <label for="password1">Password</label>
+                    <input type="password" class="form-control" name="password1" [(ngModel)]="model.password1"
+                        #password1="ngModel" [ngClass]="{ 'is-invalid': f1.submitted && password1.invalid }" required
+                        minlength="6" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+
+                    <div *ngIf="f1.submitted && password1.invalid" class="invalid-feedback">
+                        <div *ngIf="password1.errors.required">Password is required</div>
+                        <div *ngIf="password1.errors.pattern">Must contain at least one number and one uppercase and
+                            lowercase letter, and at least 8 or more characters</div>
+                    </div>
+
+                </div>
+                <!-- 2nd form grp -->
+                <div class="form-group">
+                    <button class="btn btn-primary">Login</button>
+                    </div>
+
+                <div class="form-group">
+                    <a href="#" class="ForgetPwd">Forget Password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

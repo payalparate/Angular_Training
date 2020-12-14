@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="form-group">
+        <label>Book_id</label>
+        <input type="text" class="form-control" [(ngModel)]="user.id">
+    </div> 
+    <div class="form-group">
+        <label>Book_title</label>
+        <input type="text" class="form-control" [(ngModel)]="user.Book_title">
+    </div>
+    <div class="form-group">
+        <label>Book_auther</label>
+        <input type="text" class="form-control" [(ngModel)]="user.Book_author">
+    </div>
+    <div class="form-group">
+        <label>NumberOfBooks</label>
+        <input type="text" class="form-control" [(ngModel)]="user.NumberOfBooks">
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-danger" (click)="update()">Update</button>
+    </div>
+</div>
